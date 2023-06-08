@@ -1,0 +1,130 @@
+body {
+  line-height: 1.9;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.main-color {
+  color: #37aec3;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+.btn {
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  color: #37aec3;
+  background-color: #fff;
+  border: 1px solid #2a808f;
+}
+
+/********* Start Display Temp *********/
+
+.bg-color {
+  height: 100vh;
+  /* background-color: rgba(37, 120, 134, 0.575); */
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.display-temp {
+  background-image: url(../img/bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  
+}
+.display-temp .search {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  width: 100%;
+}
+.display-temp #search-bar {
+  padding: 5px 15px;
+  border: 1px solid #3199ab;
+  border-radius: 20px;
+  background-color: #23304b;
+  color: white !important;
+}
+
+.display-temp .temp-card {
+  width: 32%;
+  border-radius: 8px;
+}
+
+.display-temp .temp-card:first-of-type {
+  background-color: #1c315e;
+}
+.display-temp .temp-card:first-of-type h2 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.display-temp .temp-card:first-of-type .day-and-date {
+  background-color: #205d68;
+}
+
+.display-temp .temp-card:nth-of-type(2) {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.display-temp .temp-card:nth-of-type(2),
+.display-temp .temp-card:nth-of-type(3) {
+  background-color: #1c315e;
+  transition: all 0.3s;
+}
+
+.display-temp .temp-card:nth-of-type(2):hover,
+.display-temp .temp-card:nth-of-type(3):hover {
+  background-color: #0e3a42;
+}
+
+.display-temp .temp-card .day-and-date {
+  background-color: #205d68;
+  color: #fff;
+  padding: 10px 25px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.display-temp .temp-card .day-and-date p {
+  margin: 0 !important;
+}
+
+.display-temp .temp-card #location {
+  font-size: 22px;
+  text-shadow: 0 0 1px #fff, 0 0 1px #fff;
+}
+
+.display-temp .temp-card .temp-datails {
+  padding: 25px;
+  color: #fff;
+}
+
+.display-temp .temp-card .temp-datails #today-description,
+.display-temp .temp-card .temp-datails .nextDay-description {
+  font-size: 14px;
+  color: #fff;
+  text-shadow: 0 0 1px #455a64, 0 0 1px #455a64;
+}
+/* Small to Medium Screen */
+@media (max-width: 991px) {
+  /* Display Temp */
+  .display-temp .city-temp {
+    display: block !important;
+  }
+
+  .display-temp #search-bar {
+    margin-bottom: 10px !important;
+  }
+
+  .display-temp .search,
+  .display-temp .temp-card {
+    width: 100%;
+    margin: 20px 0 !important;
+  }
+}
